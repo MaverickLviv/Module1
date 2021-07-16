@@ -108,7 +108,7 @@
     alert('MY NAME: ' + name + ' ' +surname );
     alert('I am: ' + age + ' my hobbys: '+ hobby);
 
-    document.write(name + <br> + surname)
+    document.write(`name + <br> + surname`)
 
     }
 
@@ -118,18 +118,30 @@
             // Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
             // Вывести в документ содержимое переменной concatenation спомощью document.write
 
-            let str1 = 'Ты';
-            let str2 = 'Кто';
+            let str1 = 'Кто';
+            let str2 = 'Ты';
             let str3 = 'Такой';
             let concatenation = `${str1} ${str2} ${str3}`;
 
             document.write(concatenation);
 
-
         }
 
 
-        }
+
+            // 10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
+
+            let str = "20"; /*тип string*/
+            let a = 5;      /*тип number*/
+            document.write(str + a + "<br/>"); /*205 стрінг з + переводить з намбер в стрінг*/
+            document.write(str - a + "<br/>"); /*15 намбер */
+            document.write(str * "2" + "<br/>"); /*40*/
+            document.write(str / 2 + "<br/>"); /*10*/
+
+        // 13. С помощью окна ввода, вызываемого методом prompt, сделать сложение двух чисел,
+        // а вывод результата при помощи метода alert
+
+
 
         </script>
 
