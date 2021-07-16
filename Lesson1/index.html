@@ -103,10 +103,10 @@
     let age = 38;
     let hobby = 'aviamodelism';
 
-    alert('MY NAME: ' + name + ' ' +surname );
-    alert('I am: ' + age + ' my hobbys: '+ hobby);
+    alert(`MY NAME: '${name} ${surname}`);
+    alert(`I am: ${age} my hobbys: ${hobby}`);
 
-    document.write(`name + <br> + surname`)
+    document.write(`${name} ${surname}`);
 
 
 
@@ -148,9 +148,9 @@
         // а вывод результата при помощи метода alert
 
 
-        let digit1 = +prompt('enter number');
-        let digit2 = +prompt('enter number 2');
-            alert((digit1 + digit2));
+        let digit1 =prompt('enter number');
+        let digit2 =prompt('enter number 2');
+            alert (+(digit1) + (+digit2));
 
 
         // 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и
@@ -159,13 +159,8 @@
 
             let userName1 = prompt('Enter you name');
             let userSurname1 = prompt('enter you surname');
-            let userAge1 = prompt('how old are you');
-                alert(`Hello` + ( userName1 + userSurname1) + `my congrats, that you` (userAge1));
-
-
-
-
-
+            let userAge1 = prompt(`how old are you`);
+                alert(`Hello ${userName1} ${userSurname1} my congrats, that you ${userAge1}`);
 
 
         </script>
