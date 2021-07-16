@@ -13,13 +13,13 @@
         // 1. Оголосіть змінні str, num, flag и txt зі значеннями «Привіт», 123, true, «true».
         // За допомогою typeof переконайтесь, що значення змінних належать типам: string, number и  boolean.
 
-        let str = Привіт;
+        let str = "Привіт";
         console.log(typeof str);
         let num = 123;
         console.log(typeof num);
         let flag = true;
         console.log(typeof flag);
-        let txt = «true»;
+        let txt = "true";
         console.log(typeof txt);
 
 
@@ -90,14 +90,14 @@
     console.log(V);
     // В прямокутного трикутника дві сторони n зі значеннями 3 та m зі значенням 4 // Знайдіть гіпотенузу К по теоремі Піфагора (використати функциію math.pow) (число степінь), // або оператор возведення в степінь
 
-    // let n = 3;
-    // let m = 4;
-    let number = Math.sqrt(Math.pow(3,2)+Math.pow(4,2));
+    let n = 3;
+    let m = 4;
+    let number = Math.sqrt(Math.pow(n,2)+Math.pow(m,2));
     console.log(number);
 
     // Вивести у вікно браузера за допомогою метода alert наступні дані:
     // ПІБ, вік, хоббі (кожен з нової строки за допомогою \n)
-        {
+
     let name = 'Pavlo';
     let surname = 'Kraynikov';
     let age = 38;
@@ -108,9 +108,9 @@
 
     document.write(`name + <br> + surname`)
 
-    }
 
-        {
+
+
             // 9. Создать 4 переменные с использованием ключевого слова let с именами str1, str2, str3, concatenation.
             // Переменной str1 присвоить фразу ‘Кто ‘, str2 – ‘ты ‘, str3 – ‘такой?’
             // Локальной переменной concatenation присвоить результат конкатенации 3-х строк: str1, str2, str3.
@@ -123,18 +123,18 @@
 
             document.write(concatenation);
 
-        }
+
 
 
 
             // 10. Подумайте Какие значения выведет в окно браузера следующий фрагмент кода?  и почему?
 
-            let str = "20"; /*тип string*/
+            let str11 = "20"; /*тип string*/
             let a = 5;      /*тип number*/
-            document.write(str + a + "<br/>"); /*205 стрінг з + переводить з намбер в стрінг*/
-            document.write(str - a + "<br/>"); /*15 намбер */
-            document.write(str * "2" + "<br/>"); /*40*/
-            document.write(str / 2 + "<br/>"); /*10*/
+            document.write(str11 + a + "<br/>"); /*205 стрінг з + переводить з намбер в стрінг*/
+            document.write(str11 - a + "<br/>"); /*15 намбер */
+            document.write(str11 * "2" + "<br/>"); /*40*/
+            document.write(str11 / 2 + "<br/>"); /*10*/
 
         /*Бо при додаванні воно "20" не переводить в число, а залишає стрінгою, і просто дописує 5 кінець,
         і виходить 205, навіть якщо в консолі глянути то воно чорного кольору тобто стрінга
@@ -148,9 +148,9 @@
         // а вывод результата при помощи метода alert
 
 
-        // let digit1 = prompt('enter number');
-        // let digit2 = prompt('enter number 2');
-        //     alert((+digit1 + +digit2));
+        let digit1 = +prompt('enter number');
+        let digit2 = +prompt('enter number 2');
+            alert((digit1 + digit2));
 
 
         // 14. С помощью окна ввода, вызываемого методом prompt, пользователь последовательно выводит имя, фамилию и
