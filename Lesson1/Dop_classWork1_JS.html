@@ -71,39 +71,30 @@
 
 
         let color =prompt('Enter color');
-        let isRoadClear =('the road is clear?')
-            if isRoadClear =(color===green && isRoadClear)
+        let isRoadClear =('the road is clear?');
+            if isRoadClear =(color === 'green' && isRoadClear)
             {
                 document.write('GO');
                 console.log('GO');
             }
-
-
-
-
-
-
-        let color =prompt('Enter color');
-        if (color==='green');
-            {
-            document.write('GO');
-            console.log('GO');
-             }
-            else if =prompt(color ==='yellow');
+            else if (color === 'green' && !isRoadClear)
             {
                 document.write('Whait');
                 console.log('Whait');
             }
-            else if =prompt(color ==='red');
-        {
-            document.write('STOP');
-            console.log('STOP');
-        }
-            else if =prompt(color ==='Error')
-        {
-            document.write('Do anything');
-            console.log('Do anything')
-        }
+            else if (color === 'yellow' && !isRoadClear)
+            {
+                document.write('Whait till free');
+                console.log('Whait till free');
+            }
+
+            else if (color === 'red' && !isRoadClear)
+            {
+                document.write('STOP');
+                console.log('STOP');
+            }
+
+
 
 
 
