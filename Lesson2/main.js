@@ -57,6 +57,6 @@ for (const listOfItems of ['html', 'css', 'javascript', 'mysql', 'mongodb', 'rea
 ]
         document.write(<div>)
 
-    document.write(</div>)
+         document.write(</div>)
 
 </div>
