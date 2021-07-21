@@ -18,12 +18,14 @@
 
 let listOfItems =['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js'];
 document.write('<div>')
-for (const listOfItems of ['html', 'css', 'javascript', 'mysql', 'mongodb', 'react', 'angular', 'node.js']) {
-    console.log(listOfItems);
-    document.write(`<div>${listOfItems}</div>`);
+for (const item of listOfItems) {
 
-    document.write('/<div>')
+
+
+    document.write(`<div>${listOfItems}</div>`);
 }
+    document.write('/<div>')
+
 // Використовуючи данні з масиву, за допомоги document.write та циклу
 // побудувати структуру по шаблону template2.1 & template2.2. Зробити адекватну стилізацію.
 //     Великими літерами прописанні властивості об'єкту які потрібно впровадити в шаблон.
