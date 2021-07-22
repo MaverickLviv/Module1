@@ -63,7 +63,10 @@ let usersWithNames = [
 
 for (const user of usersWithNames ) {
     console.log(user)
+
+    document.write(`<div>${user.name}${user.age}${user.status}</div>`)
 }
+
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
