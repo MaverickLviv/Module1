@@ -47,20 +47,23 @@
 
 // - За допомогою циклу for і document.write() вивести 10 блоків div c довільним текстом і індексом всередині
 
-let numbers =[
-    [1,2,3],
-    [4,5,6],
-    [7,8,9],
-    [10],
-]
-for (const n1 of numbers) {
-    console.log(n1)
+let usersWithNames = [
+    {name: 'vasya', age: 31, status: false},
+    {name: 'petya', age: 30, status: true},
+    {name: 'kolya', age: 29, status: true},
+    {name: 'olya', age: 28, status: false},
+    {name: 'max', age: 30, status: true},
+    {name: 'anya', age: 31, status: false},
+    {name: 'oleg', age: 28, status: false},
+    {name: 'andrey', age: 29, status: true},
+    {name: 'masha', age: 30, status: true},
+    {name: 'olya', age: 31, status: false},
+    {name: 'max', age: 31, status: true}
+];
 
-    for (const number of n1) {
-    console.log(numbers)
-        document.write(`<div>${numbers}</div>`);
-
-    }
+for (const user of usersWithNames ) {
+    console.log(user)
+}
 
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом всередині.
 // - За допомогою циклу while вивести в документ 20 блоків h1 c довільним текстом і індексом всередині.
