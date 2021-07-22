@@ -35,17 +35,17 @@ let numbers =[
     [7,8,9],
     [10],
 ]
-for (const n1 of numbers) {
-    console.log(n1)
+// for (const n1 of numbers) {
+//     console.log(n1)
+//
+//     for (const number of n1) {
+//     console.log(numbers)
+//         document.write(`<div>${numbers}</div>`);
+//
+//     }
 
-    for (const number of n1) {
-        console.log(numbers)
-    }
 
-
-}
-     
-}
+// }
 
 
 
