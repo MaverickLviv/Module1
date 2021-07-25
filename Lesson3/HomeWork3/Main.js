@@ -2,14 +2,22 @@
 
 // 1 - створити функцію яка обчислює та повертає площу прямокутника висотою
 
-    function calculator (a, b) {
-         return a * b;
-    }
-            let rectangle = calculator(10,20);
-    console.log(rectangle);
-    document.write(`<h1>Площа прямокутника =${res}</h1>`)
+    // function calculator (a, b) {
+    //      return a * b;
+    // }
+    //         let rectangle = calculator(10,20);
+    // console.log(rectangle);
+    // document.write(`<h1>Площа прямокутника =${res}</h1>`)
 
 // 2 - створити функцію яка обчислює та повертає площу кола
+
+    function calculator (r) {
+        return 3.14*r*r;
+    }
+          let circle = calculator(10);
+    console.log(circle);
+    document.write(`<h1>Площа кола =${circle}</h1>`)
+
 
 
 // 3 - створити функцію яка обчислює та повертає площу циліндру
