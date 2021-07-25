@@ -11,16 +11,25 @@
 
 // 2 - створити функцію яка обчислює та повертає площу кола
 
-    function calculator (r) {
-        return 3.14*r*r;
-    }
-          let circle = calculator(10);
-    console.log(circle);
-    document.write(`<h1>Площа кола =${circle}</h1>`)
-
-
+    // function calculator (r) {
+    //     return 3.14*r*r;
+    // }
+    //       let circle = calculator(10);
+    // console.log(circle);
+    // document.write(`<h1>Площа кола =${circle}</h1>`)
 
 // 3 - створити функцію яка обчислює та повертає площу циліндру
+
+    function calculator (h, r) {
+        return 2*3.14*r*h+2*3.14*r*r;
+        }
+            let cylinder =calculator(5, 10);
+            console.log(cylinder);
+              document.write(`<h1>Площа циліндра =${cylinder}</h1>`)
+
+
+
+
 // 4 - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
 // а виводить найбільше (Math використовувати заборонено);
 
