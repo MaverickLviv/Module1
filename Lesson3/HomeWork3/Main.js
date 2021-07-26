@@ -20,17 +20,27 @@
 
 // 3 - створити функцію яка обчислює та повертає площу циліндру
 
-    function calculator (h, r) {
-        return 2*3.14*r*h+2*3.14*r*r;
-        }
-            let cylinder =calculator(5, 10);
-            console.log(cylinder);
-              document.write(`<h1>Площа циліндра =${cylinder}</h1>`)
-
-
+    // function calculator (h, r) {
+    //     return 2*3.14*r*h+2*3.14*r*r;
+    //     }
+    //         let cylinder =calculator(5, 10);
+    //         console.log(cylinder);
+    //           document.write(`<h1>Площа циліндра =${cylinder}</h1>`)
 
 
 // 4 - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
+
+    function numbers () {
+        let min = arguments[0];
+        let max = arguments[0];
+        for (const res of arguments) {
+            if(res>max) max=res;
+            if(res<min) min=res;
+        }
+    }
+
+
+
 // а виводить найбільше (Math використовувати заборонено);
 
 
