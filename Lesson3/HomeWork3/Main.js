@@ -28,20 +28,22 @@
     //           document.write(`<h1>Площа циліндра =${cylinder}</h1>`)
 
 
-// 4 - створити функцію яка приймає будь-яку кількість чисел, повертає найменьше,
+// 4 - створити функцію яка приймає будь-яку кількість чисел,
+// повертає найменьше,// а виводить найбільше (Math використовувати заборонено);
 
-    function numbers () {
-        let min = arguments[0];
-        let max = arguments[0];
-        for (const res of arguments) {
-            if(res>max) max=res;
-            if(res<min) min=res;
-        }
+
+function min_max (){
+    let min = arguments[0];
+    let max = arguments[0];
+    for (const item of arguments) {
+        if (item > max) max = item;
+        if (item < min) min = item;
     }
+    document.write(max);
+    return min;
+}
+console.log(min_max(3,6,7,2,5,23,54,765,35,98,24,6,9,4))
 
-
-
-// а виводить найбільше (Math використовувати заборонено);
 
 
 // 5 - створити функцію яка  створює блок з текстом. Текст задати через аргумент
