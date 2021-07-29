@@ -21,14 +21,15 @@
 // иначе вывести c
 
     function min(a, b, c) {
-     if (a < b && a < c);
-
-     {
-        return a;
-    } else {
-        return b;
+        if (a < b && a < c) ;
+        console.log('a');
     }
+{
+        else (b < a && b < c);
+        console.log('b');
 }
+    console.log('c');
+
 
 
 
