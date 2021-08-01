@@ -26,28 +26,45 @@
 // getRandomInt( 0, 55, 99)
 // console.log(array2);
 
-// - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. Відсортувати його за допомоги sort
+// - створити (або згенерувати, за допомоги попередньої функції) масив
+// рандомних цілих числових значень. Відсортувати його за допомоги sort
 
-let array4 = []
-function getRandomInt4(min, max, l) {
-    for (let i = 1; i <= l; i++) {
-        array4.push(Math.floor(Math.random()*(max-min)+min));
-    }
-    return array4
-}
-getRandomInt4( 0, 100, 84);
-let sort = array4.sort(function (u1,u2){
-    return u1-u2;
-});
-console.log(sort);
-
-
-
-
-
-
+// let array4 = []
+// function getRandomInt4(min, max, l) {
+//     for (let i = 1; i <= l; i++) {
+//         array4.push(Math.floor(Math.random()*(max-min)+min));
+//     }
+//     return array4
+// }
+// getRandomInt4( 0, 100, 84);
+// let sort = array4.sort(function (u1,u2){
+//     return u1-u2;
+// });
+// console.log(sort);
 
 // - створити (або згенерувати, за допомоги попередньої функції) масив рандомних цілих числових значень. відфільтрувати  його за допомоги filter, за лишивши тільки парні числа
+    let array5 =[]
+    function getRandomInt5(min, max, 1) {
+        for (let i=1; i<=1; i++){
+            array5.push(Math.floor(Math.random()*(max-min));
+
+        }
+        return array5
+}
+    getRandomInt5(0,100,84);
+    let filter = array5.filter(function (value){
+        return value % 2 === 0;
+
+    })
+    console.log(filter);
+
+
+
+
+
+
+
+
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на срінгові.
 //
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
