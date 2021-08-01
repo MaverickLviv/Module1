@@ -57,27 +57,33 @@
 // console.log(filter);
 
 // - створити масив рандомних цілих числових значень (або згенерувати, за допомоги попередньої функції) . за допомоги map та колбеку перетворити всі об'єкти в масиві на срінгові.
-let array6 = []
-function getRandomInt6(min, max, l) {
-    for (let i = 1; i <= l; i++) {
-        array6.push(Math.floor(Math.random()*(max-min)+min));
-    }
-    return array6
-}
-getRandomInt6( 0, 100, 84);
-let map = array6.map(function (item){
-    return item+'';
-});
-console.log(map);
-let stringify = JSON.stringify(array6);
-console.log(stringify);
-
-
-
-
-
-
+// let array6 = []
+// function getRandomInt6(min, max, l) {
+//     for (let i = 1; i <= l; i++) {
+//         array6.push(Math.floor(Math.random()*(max-min)+min));
+//     }
+//     return array6
+// }
+// getRandomInt6( 0, 100, 84);
+// let map = array6.map(function (item){
+//     return item+'';
+// });
+// console.log(map);
+// let stringify = JSON.stringify(array6);
+// console.log(stringify);
 
 // - Створити функцію конструктор для об'єктів User з полями id, name, surname , email, phone
+function User(id, name, surname , email, phone){
+    this.id= id;
+    this.name= name;
+    this.surname= surname;
+    this.email=email;
+    this.phone=phone;
+}
+let user= new User(7, 'Ira', 'Shevchenko', 'Shevchenko@ukr.net', '+380937854862');
+console.log(user);
+
+
+
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
 // Взяти масив цей  User[] та: Відфільтрувати , залишивши тільки об'єкти з парними id (filter) та Відсортувати його по id. по зростанню (sort)
