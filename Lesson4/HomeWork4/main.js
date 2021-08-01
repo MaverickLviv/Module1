@@ -86,22 +86,31 @@
 
 
 // створити пустий масив, наповнити його 10 об'єктами new User(....)
-
-let users=[
-    new User( 91, 'Vasya', 'Kaz', 'Kaz@ukr.net', +380674422335 ),
-    new User( 84, 'Petya', 'Pen', 'Pen@ukr.net', +380676544562),
-    new User( 4, 'Kostya', 'Grom', 'Grom@ukr.net', +38079655312 ),
-    new User( 73, 'Igor', 'Pirog', 'Pirog@ukr.net', +3806777699450),
-    new User( 9, 'Senya', 'Popov', 'Popov@ukr.net', +380500566452 ),
-    new User( 64, 'Klava', 'Ooaass', 'Ooaass@ukr.net', +38063212154 ),
-    new User( 16, 'Toma', 'Ess', 'Ess@ukr.net', +380504211564 ),
-    new User( 56, 'Alla', 'Oss', 'Oss@ukr.net', +380686452266 ),
-    new User( 36, 'Masha', 'Ass', 'Ass@ukr.net', +380674645254 ),
-    new User( 25, 'Vova', 'Iss', 'Iss@ukr.net', +380634532154 ),
-
-]
-console.log(users)
-
+//
+// let users=[
+//     new User( 91, 'Vasya', 'Kaz', 'Kaz@ukr.net', +380674422335 ),
+//     new User( 84, 'Petya', 'Pen', 'Pen@ukr.net', +380676544562),
+//     new User( 4, 'Kostya', 'Grom', 'Grom@ukr.net', +38079655312 ),
+//     new User( 73, 'Igor', 'Pirog', 'Pirog@ukr.net', +3806777699450),
+//     new User( 9, 'Senya', 'Popov', 'Popov@ukr.net', +380500566452 ),
+//     new User( 64, 'Klava', 'Ooaass', 'Ooaass@ukr.net', +38063212154 ),
+//     new User( 16, 'Toma', 'Ess', 'Ess@ukr.net', +380504211564 ),
+//     new User( 56, 'Alla', 'Oss', 'Oss@ukr.net', +380686452266 ),
+//     new User( 36, 'Masha', 'Ass', 'Ass@ukr.net', +380674645254 ),
+//     new User( 25, 'Vova', 'Iss', 'Iss@ukr.net', +380634532154 ),
+//
+// ]
+// console.log(users)
+//
 
 
 // Взяти масив цей  User[] та: Відфільтрувати , залишивши тільки об'єкти з парними id (filter) та Відсортувати його по id. по зростанню (sort)
+// let filter6 = users.filter(function (User){
+//     return User.id % 2 === 0;
+// });
+// console.log(filter6)
+// // Відсортувати його по id. по зростанню (sort)
+// let sort6 = users.sort(function (u1,u2){
+//     return u1.id - u2.id;
+// });
+// console.log(sort6);
