@@ -24,7 +24,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                     .then(response => response.json())
                     .then(comments => {
                         console.log(comments)
-                        const commentsDiv =document.getElementById('comments');
+                        const commentsDiv =document.createElement('div');
                         for (const comment of comments){
                             const commentDiv =document.createElement('div');
                             commentDiv.classList.add('comment');
@@ -36,13 +36,14 @@ fetch('https://jsonplaceholder.typicode.com/posts')
                             commentsDiv.append(commentDiv);
 
                         }
+                        postDiv.append(commentsDiv);
                     });
             }
 
 
 
 
-            postDiv.append(postTitle,postBody);
+            postDiv.append(postTitle,postBody,getCommentsBtn);
             postsDiv.append(postDiv);
         }
     } );
