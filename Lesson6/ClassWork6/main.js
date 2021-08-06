@@ -17,6 +17,31 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             postTitle.innerText =`${post.id}. ${post.title}`;
             const postBody =document.createElement('p');
             postBody.innerText =post.body;
+            const getCommentsBtn =document.createElement('button');
+            getCommentsBtn.innerText ='push';
+            getCommentsBtn.onclick =function (){
+                fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
+                    .then(response => response.json())
+                    .then(comments => {
+                        console.log(comments)
+                        const commentsDiv =document.getElementById('comments');
+                        for (const comment of comments){
+                            const commentDiv =document.createElement('div');
+                            commentDiv.classList.add('comment');
+                            const commentEmail =document.createElement('h2');
+                            commentEmail.innerText =`${comment.id}. ${comment.email}`;
+                            const commentBody =document.createElement('p');
+                            commentBody.innerText=comment.body;
+                            commentDiv.append(commentEmail,commentBody);
+                            commentsDiv.append(commentDiv);
+
+                        }
+                    });
+            }
+
+
+
+
             postDiv.append(postTitle,postBody);
             postsDiv.append(postDiv);
         }
