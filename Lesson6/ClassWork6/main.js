@@ -19,7 +19,8 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             postBody.innerText =post.body;
             const getCommentsBtn =document.createElement('button');
             getCommentsBtn.innerText ='push';
-            getCommentsBtn.onclick =function (){
+            getCommentsBtn.addEventListener('click', getPost, {once:true})
+            function getPost (){
                 fetch(`https://jsonplaceholder.typicode.com/posts/${post.id}/comments`)
                     .then(response => response.json())
                     .then(comments => {
