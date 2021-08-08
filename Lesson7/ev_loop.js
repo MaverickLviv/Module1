@@ -4,7 +4,7 @@
 function morningTime(time) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-                console.log('Утро, мать его');
+                console.log('Утро, день, вечер');
                 if (time < 3) {
                     console.log('Спим')
                     reject('Спать')
