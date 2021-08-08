@@ -14,7 +14,7 @@ function morningTime(time) {
                     resolve('Встаем');
                 }
             }, 500)
-        )
+
     })
 }
 async function allDay (){
