@@ -13,7 +13,7 @@ function morningTime(time) {
                     console.log('Подъем');
                     resolve('Встаем');
                 }
-            }
+            }, 500);
         )
     })
 }
