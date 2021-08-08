@@ -17,7 +17,7 @@ fetch('https://jsonplaceholder.typicode.com/posts')
             postTitle.innerText =`${post.id}. ${post.title}`;
             const postBody =document.createElement('p');
             postBody.innerText =post.body;
-            const getCommentsBtn =document.createElement('button');
+            const getCommentsBtn =document.createElement('button'); /*создание тега(елемента, шаблона)*/
             getCommentsBtn.innerText ='push';
             getCommentsBtn.addEventListener('click', getPost, {once:true})
             function getPost (){
