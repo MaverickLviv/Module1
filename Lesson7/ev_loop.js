@@ -13,7 +13,11 @@ function morningTime(time) {
                     console.log('Подъем');
                     resolve('Встаем');
                 }
-            }, 500);
+            }, 500)
         )
     })
 }
+async function allDay (){
+    const day = await morningTime(3)
+}
+allDay().then();
