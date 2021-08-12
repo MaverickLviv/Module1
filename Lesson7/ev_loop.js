@@ -4,7 +4,7 @@
 function morningTime(time) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
-                console.log('Утро, день, вечер');
+                console.log('Утро, день, вечер') ;
                 if (time < 3) {
                     console.log('Спим')
                     reject('Спать')
@@ -96,15 +96,23 @@ function morningTime8(/*time*/) {
 
 }
 
+
 async function allDay (){
-    const day = await morningTime(3)
-    await morningTime1();
-    await morningTime2();
-    await morningTime3();
-    await morningTime4();
-    await morningTime5();
-    await morningTime6();
-    await morningTime7();
-    await morningTime8();
+    try {
+        const day = await morningTime(3)
+        await morningTime1();
+        await morningTime2();
+        await morningTime3();
+        await morningTime4();
+        await morningTime5();
+        await morningTime6();
+        await morningTime7();
+        await morningTime8();
+    }    catch (err) {
+        console.log(err);
+    }
+
 }
+
+
 allDay().then();
